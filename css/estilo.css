@@ -1,0 +1,553 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.contenedor{
+   padding: 60px 0;
+   width: 90%;
+   max-width: 1000px;
+   margin: auto;
+   overflow: hidden;
+}
+.titulo{
+color: #000000;
+font-size: 30px;
+text-align: center;
+margin-bottom: 60px;
+
+}
+
+/* Header */
+
+header{
+
+    width: 100%;
+    height: 600px;
+    
+    background: #dd5b05;
+    /* fallback for old browsers */
+    
+    background: -webkit-linea-gradient(to right,  rgba(0, 0, 0, 0.582), hsla(46, 100%, 86%, 0.507)), url(../img/pp.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.582), hsla(46, 100%, 86%, 0.507)), url(../img/pp.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+
+}
+
+
+nav{
+
+
+    text-align: right;
+    padding: 30px 50px 0 0;
+
+
+}
+
+nav > a{
+
+    color:#0a0a0a;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+
+    text-decoration: underline;
+}
+
+header .texto-header{
+
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: medium;
+    flex-direction: column;
+    text-align: center;
+
+}
+.texto-header h1{
+
+    font-size: 50px;
+    color: #000000;
+
+}
+.texto-header h2{
+
+    font-size: 30px;
+    font-weight: 300;
+    color: #dd5b05(235, 113, 0);
+}
+
+.wave{
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+/* Abaut us */
+
+main.Sobre-Nuestro-Servicio{
+padding: 30px 0 60px 0;
+
+
+
+}
+.contenedor-Sobre-Nuestro-Servicio{
+
+    display: flex;
+justify-content: space-evenly;
+
+
+}
+.imagen-abaut.us{
+
+    width: 48%;
+
+}
+
+.Sobre-Nuestro-Servicio .contenido-textos{
+
+    width: 100%;
+}
+
+
+
+
+.contenido-textos p{
+
+    padding: 0px 0px 30px 30px;
+    font-weight: 300;
+    text-align: justify;
+    
+}
+
+/* abaut us1 */
+
+
+.contenedor-Sobre-Nosotros{
+
+display: flex;
+justify-content: space-evenly
+
+}
+.imagen-abaut.us1{
+
+    width: 48%;
+  
+
+}
+.Sobre-Nosotros .contenidos-texto1{
+
+    width: 100%;
+
+}
+
+
+.contenidos-texto1 p{
+
+    padding: 0px 0px 30px 30px;
+    font-weight: 300;
+    text-align: justify;
+
+}
+
+/* Galeria */
+
+.Portafolio{
+
+    background: #dd5b05;
+}
+.galeria-port{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+
+    width: 24%;
+    margin-bottom: 10px;
+    
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+   
+
+
+}
+
+.imagen-port > img{
+
+    width: 100%;
+    height: 100%;
+    object-position: cover;
+    display: block;
+
+
+}
+.hover-galeria{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0); 
+    
+    background:  hsla(0, 0%, 0%, 0.671);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.hover-galeria img{
+
+    width: 50px;
+}
+.hover-galeria p{
+
+    color: #fff;
+
+}
+.imagen-port:hover .hover-galeria{
+
+    transform: scale(1);
+}
+/* Clients */
+
+.cards{
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.cards .card{
+background: #dd5b05;
+display: flex;
+width: 46%;
+height: 100%;
+align-items: center;
+justify-content: space-evenly;
+border-radius: 5px;
+box-shadow: 0 0 6px 0 rgba(0, 0, 0. 0.6);
+
+
+
+
+}
+.cards .card img{
+
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+
+}
+.cards .card > .contenido-texto-card{
+
+    width: 60%;
+    color: #0a0a0a;
+
+}
+.cards .card > .contenido-texto-card p{
+
+    font-weight: 300;
+    padding-top: 5px;
+    
+}
+
+/* our team */
+
+.abaut-Transparencia{
+
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+.Transparencia-cont{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Transparencia-ind{
+
+    width: 28%;
+    text-align: center;
+
+}
+.Transparencia-ind img{
+
+    width: 90%;
+
+}
+.Transparencia-ind h3{
+
+    margin: 10px 0;
+
+}
+
+.Transparencia-ind p{
+
+    font-weight: 300;
+    text-align: justify;
+
+}
+
+/* footer */
+
+footer{
+
+    background: #dd5b05;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+.content-foo{
+
+    text-align: center;
+}
+
+.content-foo h4{
+
+    color: #ffffff;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+}
+.content-foo p{
+
+    color: #ffffff;
+}
+
+@media screen and (max-width:900px){
+
+    header{
+        background-position: center;
+
+    }
+    .contenedor-Sobre-Nuestro-Servicio{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .Sobre-Nuestro-Servicio .contenido-textos{
+
+        width: 90%;
+
+    }
+    .imagen-abaut.us{
+
+        width: 90%;
+
+    }
+    .contenedor-Sobre-Nosotros{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Sobre-Nosotros .contenidos-texto1{
+
+        width: 90%;
+    }
+    .imagen-abaut-us1{
+
+        width: 90%;
+    }
+
+    /* Galeria */
+    .imagen-port{
+
+        width: 44%;
+    }
+
+    /* Clients */
+    .cards{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .card.card{
+
+        width: 90%;
+    }
+    
+    .card.card:first-child{
+
+        margin-bottom: 30px;
+    }
+/* our team */
+.Transparencia-cont{
+
+    justify-content: center;
+    flex-direction: column;
+
+}
+.Transparencia-ind{
+    
+width: 100%;
+text-align: center;
+
+}
+.Transparencia-ind:nth-child(1), .Transparencia-ind:nth-child(2){
+margin-bottom: 60px;
+
+
+}
+
+.Transparencia-ind img{
+
+    width: 90%;
+
+}
+}
+
+@media screen and (max-width:500px){
+
+    nav{
+
+        text-align: center;
+        padding: 30px 0 0 0;
+
+    }
+
+    nav > a{
+
+        margin-right: 5px;
+    }
+    .texto-header h1{
+
+        font-size: 35px;
+
+    }
+    .texto-header h2{
+        font-size: 20px;
+
+    }
+    /* Abaut us */
+    .imagen-abaut.us{
+
+        margin-bottom: 60px;
+        width: 99%;
+    }
+    .Sobre-Nuestro-Servicio .contenido-textos{
+
+        width: 95%;
+
+    }
+    /* abaut-us1 */
+    .imagen-abaut-us1{
+
+        margin-bottom: 60px;
+        width: 99%;
+    }
+    .Sobre-Nosotros .contenidos-texto1{
+        width: 95%;
+
+    }
+    /* Galeria */
+    .imagen-port{
+
+        width: 95%;
+
+    }
+/* Clients */
+.cards .card{
+
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+
+
+
+
+    
+
+}
+.cards .card img{
+
+    width: 90px;
+    height: 90px;
+
+}
+
+/* footer */
+
+.contenedor-footer{
+
+    flex-direction: column;
+    border: none;
+
+}
+.content-foo{
+
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content-foo h4{
+
+    border: none;
+
+}
+.content-foo h4{
+
+   color: #ccc;
+   border-bottom: 1px solid #f2f2f2;
+   padding-bottom: 20px;
+   
+
+}
+
+    
+
+}
+
+
+
+
+
+
+
+
